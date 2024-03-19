@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" href="../../img/2048_logo.png" type="image/icon">
+    <title> 2048 </title>
+</head>
+
+<body>
+    <div id="main_game">
+        <div id="title">
+            <div class="scoreboard">
+                <h1>Scores</h1>
+                <h2 class="scores">0</h2>
+            </div>
+            <div class="scoreboard">
+                <h1>Highest</h1>
+                <h2 class="highest_score">0</h2>
+            </div>
+            <div id="instruction_and_newgame" class="hidden">
+                <button id="restart_button" class="button">
+                    New game
+                </button>
+                <button id="how_to_play" class="button">
+                    How to play
+                </button>
+                <button id="show_arrow" class="button">
+                    Show keys
+                </button>
+            </div>
+        </div>
+
+        <div class="board">
+            <div style="opacity: 0;" id="instruction">
+                <h1 style="text-align: center;">How to play</h1>
+                <h2>How the game works</h2>
+                <p>You can move the board in for directions: up, down, left, right</p>
+                <p>Tiles with the same number merge into one when they touch.</p>
+                <p><b>Your goal</b>: Add them up to reach 2048!</p>
+
+                <h2>How to control</h2>
+                <p>You can press the <b>"Show keys"</b> button to show the arrow control on screen (for phone user)</p>
+                <p>Use your arrow keys (or the arrows on the screen) to move the tiles.</p>
+                <p>Use <b>New game</b> or (<b>"r"</b> key) to play a new game</p>
+            </div>
+
+            <div id="game_board" style="opacity: 1;">
+                <div class="win">
+                    <p></p>
+                    <button id="try_again" class="button">
+                        Try again
+                    </button>
+                </div>
+
+                <table style="opacity: 1;">
+                    <tr class="row">
+                        <th id="cell_0" class="cell"></th>
+                        <th id="cell_1" class="cell"></th>
+                        <th id="cell_2" class="cell"></th>
+                        <th id="cell_3" class="cell"></th>
+                    </tr>
+                    <tr class="row">
+                        <th id="cell_4" class="cell"></th>
+                        <th id="cell_5" class="cell"></th>
+                        <th id="cell_6" class="cell"></th>
+                        <th id="cell_7" class="cell"></th>
+                    </tr>
+                    <tr class="row">
+                        <th id="cell_8" class="cell"></th>
+                        <th id="cell_9" class="cell"></th>
+                        <th id="cell_10" class="cell"></th>
+                        <th id="cell_11" class="cell"></th>
+                    </tr>
+                    <tr class="row">
+                        <th id="cell_12" class="cell"></th>
+                        <th id="cell_13" class="cell"></th>
+                        <th id="cell_14" class="cell"></th>
+                        <th id="cell_15" class="cell"></th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="control_arrow hidden"  style="opacity: 1;">
+            <div class="first_row">
+                    <img class = "arrow up" src="../../img/arrow.png" alt="arrow up">
+            </div>
+            <div class="second_row">
+                <img class="arrow left" src="../../img/arrow.png" alt = "arrow left">
+                <img class="empty_box" src="../../img/2048_logo.png" alt="logo">
+                <img class="arrow right" src="../../img/arrow.png" alt = "arrow right">
+            </div>
+            <div class="third_row">
+                <img class="arrow down" src="../../img/arrow.png" alt = "arrow down">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
