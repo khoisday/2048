@@ -3,7 +3,7 @@
 ## Table of content
 
 - [Introduction](#introduction)
-- [The original `2048` game](#first-game)
+- [The `2048` game](#first-game)
 - [`2048 Solitaire`](#second-game)
 
 ## Introduction <a name="introduction"></a>
